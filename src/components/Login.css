@@ -1,0 +1,58 @@
+.Login{
+   
+   display:Flex;
+   justify-content: center;
+   align-items: center;
+}
+.LoginBox{
+   margin-top: 10rem;
+   width: 400px;
+   height: 500px;
+   background-color:grey;
+   padding: 20px;
+   border-radius: 10px;
+}
+.LoginHeader{
+   color: azure;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: xx-large;
+   font-weight: 34px;
+   margin-top: 30px;
+}
+.inputs{
+   padding:20px;
+
+}
+.username{
+   margin-top: 3rem;
+   height: 40px;
+   width:100%;
+   border-radius: 6px;
+   border-width: 1;
+   margin-bottom:35px ;
+
+}
+.password{
+   height: 40px;
+   width:100%;
+   border-radius: 6px;
+   border-width: 1;
+  
+}
+.submit{
+   width: 80px;
+   display:100px;
+   height:40px;
+   background-color:skyblue;
+   color: white;
+   border-radius: 6px;
+   font-weight: bold;
+   margin-top: 30px;
+
+}
+.submit:hover{
+   background-color: white;
+   color: black;
+}
