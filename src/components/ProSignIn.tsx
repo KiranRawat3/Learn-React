@@ -14,7 +14,7 @@ function ProSignIn() {
           <Row gutter={[16, 16]}>
             <Col span={24}>
               <img src={logo} className="signInImg" />
-              <h1 className="h1">Login</h1>
+              <h1 className="h1">Login to the Protal</h1>
               <h3 className="h3">Welcome to Smart Asset Monitoring System </h3>
               <Input
                 className="signInUsername"
