@@ -1,24 +1,30 @@
-.signIn {
+.signin-div {
   background-color: #129489;
   justify-content: center;
   align-items: center;
   display: flex;
-  min-height: 100vh;
-  padding: 24px;
+  height: 100vh;
+ padding: 24px;
+  
 }
-.signInCard {
+.signin-card {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 900vh;
-  border-radius: none;
+  /* padding:24px; */
+  /* height:70vh;
+  width: 40vw; */
+  max-width:50vh;
+  border-radius: 0px;
 
   /* width: 300vh; */
 }
-.signInUsername {
+.signin-card .ant-card-body{
+  width:fit-content !important;
+}
+.signin-username {
   margin-top: 5px;
   /* width: 100%; */
   /* padding: 15px; */
@@ -26,6 +32,7 @@
   border: none;
   margin-bottom: 1px;
   border-bottom: 1px solid #333;
+  border-radius: 0;
 }
 /* input {
     display: block;
@@ -37,23 +44,24 @@
     border-bottom: 1px solid #333;
   } */
 
-.signInUsername:focus {
+.signin-username:focus {
   border-bottom: 1px solid dimgray;
   box-shadow: 0 1px 0 0 dimgray;
 }
-.signInPass:focus {
+.signin-password:focus {
   border-bottom: 1px solid dimgray;
   box-shadow: 0 1px 0 0 dimgray;
 }
 
-.signInPass {
+.signin-password {
   margin-top: 5px;
   height: 5vh;
   border: none;
   margin-bottom: 1px;
   border-bottom: 1px solid #333;
+  border-radius: 0;
 }
-.signInButton {
+.signin-button {
   border: none;
   margin-top: 5px;
   width: 100%;
@@ -61,22 +69,25 @@
   background-color: #129489;
   color: white;
   margin-bottom: 10px;
+  border-radius: 0;
 }
-.signInImg {
+.signin-image {
   height: 100px;
   width: 100px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.h1 {
+.signin-heading {
   text-align: center;
   font-weight: bolder;
   color: #129489;
+  font-size: 32px;
 }
-.signInLink {
+.signin-link {
   color: #129489;
   margin-bottom: 10px;
+  font-size: 16px
 }
 
 .ant-card .ant-card-body {
@@ -84,12 +95,15 @@
   /* border-radius: 0 0 0px 0px; */
   width: 55vh;
 }
-.h3 {
+.signin-sub-heading {
   margin-top: none;
   text-align: center;
   font-weight: lighter;
+  font-size: 20px
 }
-.signInCheck {
+
+
+.signin-checkbox {
   /* display: inline-block; */
   margin-left: 10px;
 }

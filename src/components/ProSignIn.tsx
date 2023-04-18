@@ -7,50 +7,50 @@ function ProSignIn() {
   let password = "";
 
   return (
-    <>
-      <div className="signIn">
-        <Card className="signIncard">
-          <div></div>
-          <Row gutter={[16, 16]}>
-            <Col span={24}>
-              <img src={logo} className="signInImg" />
-              <h1 className="h1">Login to the Protal</h1>
-              <h3 className="h3">Welcome to Smart Asset Monitoring System </h3>
+    
+      <div className="signIn-Div">
+        <Card className="signIn-Card"  >
+          
+          <Row gutter={[16, 16]} >
+          <Col xs={{span:24}}  >
+              <img src={logo} className="signIn-Img" />
+              <h1 className="Heading">Login</h1>
+              <h3 className="Sub-Heading">Welcome to Smart Asset Monitoring System </h3>
               <Input
-                className="signInUsername"
+                className="signIn-Username"
                 value={username}
                 placeholder="UserId"
               ></Input>
-            </Col>
-            <Col span={24}>
+            </Col> 
+            <Col xs={{span:24}} >
               <Input
-                className="signInPass"
+                className="signIn-Password"
                 value={password}
                 placeholder="Password:"
               ></Input>
             </Col>
-            <Checkbox className="signInCheck">Remember me</Checkbox>
-            <Col span={24}>
-              <Button className="signInButton">LOGIN</Button>
-              <a href="#" className="signInLink">
+            <Checkbox className="signIn-Checkbox">Remember me</Checkbox>
+            <Col xs={{span:24}} >
+              <Button className="signIn-Button">LOGIN</Button>
+              <a href="#" className="signIn-Link">
                 forgot User Id?
               </a>
               <br />
               <br />
-              <a href="#" className="signInLink">
+              <a href="#" className="signIn-Link">
                 forgot password?
               </a>
               <br />
               <br />
               <label>Not Registered?</label>
-              <a href="#" className="signInLink">
+              <a href="#" className="signIn-Link">
                 register here
               </a>
             </Col>
           </Row>
         </Card>
       </div>
-    </>
+    
   );
 }
 export default ProSignIn;
