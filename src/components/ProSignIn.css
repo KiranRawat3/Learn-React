@@ -1,4 +1,4 @@
-.signIn-Div {
+.signin-div {
   background-color: #129489;
   justify-content: center;
   align-items: center;
@@ -7,7 +7,7 @@
  padding: 24px;
   
 }
-.signIn-Card {
+.signin-card {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
   position: relative;
@@ -21,10 +21,10 @@
 
   /* width: 300vh; */
 }
-.signIn-Card .ant-card-body{
+.signin-card .ant-card-body{
   width:fit-content !important;
 }
-.signIn-Username {
+.signin-username {
   margin-top: 5px;
   /* width: 100%; */
   /* padding: 15px; */
@@ -44,16 +44,16 @@
     border-bottom: 1px solid #333;
   } */
 
-.signIn-Username:focus {
+.signin-username:focus {
   border-bottom: 1px solid dimgray;
   box-shadow: 0 1px 0 0 dimgray;
 }
-.signIn-Password:focus {
+.signin-password:focus {
   border-bottom: 1px solid dimgray;
   box-shadow: 0 1px 0 0 dimgray;
 }
 
-.signIn-Password {
+.signin-password {
   margin-top: 5px;
   height: 5vh;
   border: none;
@@ -61,7 +61,7 @@
   border-bottom: 1px solid #333;
   border-radius: 0;
 }
-.signIn-Button {
+.signin-button {
   border: none;
   margin-top: 5px;
   width: 100%;
@@ -71,20 +71,20 @@
   margin-bottom: 10px;
   border-radius: 0;
 }
-.signIn-Img {
+.signin-image {
   height: 100px;
   width: 100px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.Heading {
+.signin-heading {
   text-align: center;
   font-weight: bolder;
   color: #129489;
   font-size: 32px;
 }
-.signIn-Link {
+.signin-link {
   color: #129489;
   margin-bottom: 10px;
   font-size: 16px
@@ -95,7 +95,7 @@
   /* border-radius: 0 0 0px 0px; */
   width: 55vh;
 }
-.Sub-Heading {
+.signin-sub-heading {
   margin-top: none;
   text-align: center;
   font-weight: lighter;
@@ -103,7 +103,7 @@
 }
 
 
-.signIn-Checkbox {
+.signin-checkbox {
   /* display: inline-block; */
   margin-left: 10px;
 }
