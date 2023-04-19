@@ -1,56 +1,53 @@
-import { Card, Row, Col, Input, Checkbox, Button } from "antd";
+import { Card, Row, Col, Input, Checkbox, Button} from "antd";
+
 import React from "react";
-import logo from "./innobit.png";
+import logo from "./login-logo.png";
 import "./ProSignIn.css";
+import background from "./background.png";
+import { List } from "antd/es/form/Form";
 function ProSignIn() {
   let username = "";
   let password = "";
 
   return (
-    
-      <div className="signIn-Div">
-        <Card className="signIn-Card"  >
-          
-          <Row gutter={[16, 16]} >
-          <Col xs={{span:24}}  >
-              <img src={logo} className="signIn-Img" />
-              <h1 className="Heading">Login</h1>
-              <h3 className="Sub-Heading">Welcome to Smart Asset Monitoring System </h3>
-              <Input
-                className="signIn-Username"
-                value={username}
-                placeholder="UserId"
-              ></Input>
-            </Col> 
-            <Col xs={{span:24}} >
-              <Input
-                className="signIn-Password"
-                value={password}
-                placeholder="Password:"
-              ></Input>
-            </Col>
-            <Checkbox className="signIn-Checkbox">Remember me</Checkbox>
-            <Col xs={{span:24}} >
-              <Button className="signIn-Button">LOGIN</Button>
-              <a href="#" className="signIn-Link">
-                forgot User Id?
-              </a>
-              <br />
-              <br />
-              <a href="#" className="signIn-Link">
-                forgot password?
-              </a>
-              <br />
-              <br />
-              <label>Not Registered?</label>
-              <a href="#" className="signIn-Link">
-                register here
-              </a>
-            </Col>
-          </Row>
-        </Card>
-      </div>
-    
+    <div className="signin-div">
+      <Card className="signin-card">
+        
+        <Row gutter={[16, 16]}>
+          <Col xs={{ span: 24 }}>
+            <img src={logo} className="signin-image" />
+            <div className="signin-heading">Login</div>
+            <div className="signin-sub-heading">
+              Welcome to Smart Asset Monitoring System{" "}
+            </div>
+            <Input
+              className="signin-username"
+              value={username}
+              placeholder="UserId"
+            ></Input>
+          </Col>
+          <Col xs={{ span: 24 }}>
+            <Input
+              className="signin-password"
+              value={password}
+              placeholder="Password"
+            ></Input>
+          </Col>
+          <Checkbox className="signin-checkbox">Remember me</Checkbox>
+          <Col xs={{ span: 24 }}>
+            <Button className="signin-button">LOGIN</Button>
+            <a href="#" className="signin-link">
+              forgot User Id?
+            </a>
+            <a href="#" className="signin-link">
+              forgot password?
+            </a>
+            Not Registered?<a href="#" className="signin-link"> register here
+            </a>
+          </Col>
+        </Row>
+      </Card>
+    </div>
   );
 }
 export default ProSignIn;
