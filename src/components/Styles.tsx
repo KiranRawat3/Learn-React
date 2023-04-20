@@ -27,6 +27,7 @@ const StyleInput = styled(Input)`
   border: none;
   border-bottom: 1px solid black;
   border-radius: 0;
+  width: 500px;
 `;
 
 export { StyledButton, StyleTitle, StyleCard, StyleInput };

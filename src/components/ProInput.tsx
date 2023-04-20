@@ -6,7 +6,7 @@ function ProInput(props:any) {
     const {placeholder}=props;
   return (
    
-    <ProInput>{placeholder}</ProInput>
+    <StyleInput placeholder={placeholder}></StyleInput>
   )
 }
 

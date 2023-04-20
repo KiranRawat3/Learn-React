@@ -1,5 +1,7 @@
 import React from "react";
 import { StyledButton } from "./Styles";
+
+
 function ProButton(props: any) {
   const { children, onClick,type,disabled} = props;
   console.log(props);
