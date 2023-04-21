@@ -5,12 +5,11 @@ import { ChildProcess } from "child_process";
 import Item from "antd/es/list/Item";
 import { Content } from "antd/es/layout/layout";
 import {
-  StyledButton,
-  StyleTitle,
-  StyleCard,
-  StyleInput,
+  StyledButton, StyledTitle, StyledCard, StyledInput ,StyledPrimaryBtn,StyledSecondaryBtn
 } from "./components/Styles";
 import ProInput from "./components/ProInput";
+import PrimaryBtn from "./components/PrimaryBtn";
+import SecondaryBtn from "./components/SecondaryBtn";
 //import  './components/ProButton.css';
 //import Login from './components/Login';
 // //import {useState} from 'react';
@@ -63,7 +62,7 @@ function App() {
       {/*----------------------------------------------STYLE COMPONENTS-------------------------------- */}
 
 
-      <StyleCard>
+      <StyledCard>
         hellooo
           <br />
           <br /> 
@@ -76,7 +75,7 @@ function App() {
           <br />
         </div>
         <label>Username</label>
-        <StyleInput placeholder="enter your username"></StyleInput>
+        <StyledInput placeholder="enter your username"></StyledInput>
         <br /> 
         <StyledButton type={"primary"}>styled Component</StyledButton>
          <br/><br/>
@@ -101,11 +100,16 @@ function App() {
       >
         Save
       </ProButton>
-      <StyleTitle>my first style component</StyleTitle>
+      <StyledTitle>my first style component</StyledTitle>
       <ProInput placeholder={"enter your name"}></ProInput>
       <ProInput placeholder={"enter your phone number"}></ProInput>
-      <ProInput placeholder={"enter your email"}></ProInput>
-      </StyleCard>
+      <ProInput placeholder={"enter your email"}></ProInput><br/><br/>
+
+     <PrimaryBtn>Sign Up</PrimaryBtn>
+     <SecondaryBtn>Cancel</SecondaryBtn>
+
+      </StyledCard>
+
 
 
 
@@ -114,6 +118,8 @@ function App() {
      
      
       {/* <ProSignIn/> */}
+
+
 
 
 
