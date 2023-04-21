@@ -1,53 +1,50 @@
 .signin-div {
-  background-color: #129489;
+  /* background-color: #129489;  */
+  background: url(background.png);
+  background-size: cover;
+  background-attachment: fixed;
   justify-content: center;
   align-items: center;
   display: flex;
   height: 100vh;
- padding: 24px;
-  
+  /* width: 100vw; */
+  /* padding: 40px; */
 }
+
 .signin-card {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
-  position: relative;
   display: flex;
   justify-content: center;
   /* padding:24px; */
   /* height:70vh;
   width: 40vw; */
-  max-width:50vh;
+  /* position: fixed; */
+  max-width: 50vh;
   border-radius: 0px;
-
   /* width: 300vh; */
 }
-.signin-card .ant-card-body{
-  width:fit-content !important;
+
+.signin-card .ant-card-body {
+  width: fit-content !important;
 }
+
 .signin-username {
   margin-top: 5px;
   /* width: 100%; */
   /* padding: 15px; */
-  height: 5vh;
+  height: 4vh;
   border: none;
   margin-bottom: 1px;
   border-bottom: 1px solid #333;
   border-radius: 0;
 }
-/* input {
-    display: block;
-    outline: none;
-    border: none;
-    height: 2em;
-    font-size: 16px;
-    margin-bottom: 1px;
-    border-bottom: 1px solid #333;
-  } */
 
 .signin-username:focus {
   border-bottom: 1px solid dimgray;
   box-shadow: 0 1px 0 0 dimgray;
 }
+
 .signin-password:focus {
   border-bottom: 1px solid dimgray;
   box-shadow: 0 1px 0 0 dimgray;
@@ -55,12 +52,13 @@
 
 .signin-password {
   margin-top: 5px;
-  height: 5vh;
+  height: 4vh;
   border: none;
   margin-bottom: 1px;
   border-bottom: 1px solid #333;
   border-radius: 0;
 }
+
 .signin-button {
   border: none;
   margin-top: 5px;
@@ -71,23 +69,28 @@
   margin-bottom: 10px;
   border-radius: 0;
 }
+
 .signin-image {
-  height: 100px;
-  width: 100px;
+  height: 138px;
+  width: 130px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 .signin-heading {
+  text-align: center;
   text-align: center;
   font-weight: bolder;
   color: #129489;
   font-size: 32px;
 }
+
 .signin-link {
   color: #129489;
+  display: block;
   margin-bottom: 10px;
-  font-size: 16px
+  font-size: 15px;
 }
 
 .ant-card .ant-card-body {
@@ -95,15 +98,43 @@
   /* border-radius: 0 0 0px 0px; */
   width: 55vh;
 }
+
 .signin-sub-heading {
   margin-top: none;
   text-align: center;
   font-weight: lighter;
-  font-size: 20px
+  font-size: 15px;
 }
-
 
 .signin-checkbox {
   /* display: inline-block; */
   margin-left: 10px;
 }
+
+.signin-username:hover {
+  border-bottom-color: #129489;
+}
+
+.signin-password:hover {
+  border-bottom-color: #129489;
+}
+
+@media only screen and (max-width: 1920px) {
+  .signin-card {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .signin-card {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .signin-card {
+    width: 340px;
+  }
+}
+
+
