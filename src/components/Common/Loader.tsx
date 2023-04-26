@@ -1,10 +1,10 @@
 import React from "react";
 import { StyledLoader } from "./Styles";
 
-function ProLoader(props: any) {
+function Loader(props: any) {
   const {icon }= props;
   
   return <StyledLoader >{icon}</StyledLoader>;
 }
 
-export default ProLoader;
+export default Loader;
