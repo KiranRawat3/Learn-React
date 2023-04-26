@@ -1,10 +1,10 @@
 import React from 'react'
 import { StyledPrimaryBtn } from './Styles';
-function PrimaryBtn(props:any) {
+function PrimaryButton(props:any) {
     const {children}=props;
   return (
      <StyledPrimaryBtn>{children}</StyledPrimaryBtn>
   )
 }
 
-export default PrimaryBtn
+export default PrimaryButton;

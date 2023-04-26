@@ -92,6 +92,14 @@
        </StyledCard>
 
 
+       ------------------------------------MODAL AND TOOLTIP----------------------------------------
+       
+     {/* <Button onClick={showModal}>{"open modal"}</Button>
+      <Modal onOk={handleOk} onCancel={handleCancel} visible={visible}><div>Pari hu mai</div></Modal>
+      <Tooltip title="prompt text"  trigger ="hover"  arrow = {true}>
+      <StyledSpanTag>Tooltip will show on mouse enter.</StyledSpanTag>
+      </Tooltip> */}
+
       */}
 
       {/*------ -------------------------------PROJECT SIGNIN------------------------------------------- */}

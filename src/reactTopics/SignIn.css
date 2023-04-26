@@ -1,0 +1,57 @@
+.signInUsername{
+   margin-top: 5px;
+   width: 100%;
+   
+   height: 5vh;
+}
+.signInPass{
+    margin-top: 5px;
+   width: 100%;
+   height: 5vh;
+}
+.signIncard{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  width: 500px; 
+}
+
+.signInImg{
+   height: 100px;
+   width: 100px; 
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.h2{
+  text-align: center;  
+  font-weight:800;
+}
+.signInButton{
+   margin-top: 40px;
+   width: 100%;
+   height: 50px;
+   background-color: #227F99;
+color: white;
+}
+
+.signIn{
+   background-color:#227F99;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   height: 100vh;
+   padding: 24px;
+}
+.envimg{
+   display: flex;
+   justify-content: right;
+   /* text-align: right; */
+   position: absolute;
+   right: 0;
+   top:-1px;
+}
