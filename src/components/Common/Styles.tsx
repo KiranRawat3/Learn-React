@@ -1,4 +1,5 @@
-import { Tooltip ,Modal,Button,Table,Input,Card,Spin} from "antd";
+import { Tooltip ,Modal,Button,Table,Card,Spin} from "antd";
+import { Input} from "antd";
 import styled from "styled-components";
 import PrimaryButton from "./PrimaryButton";
 import Loader from "./Loader";
@@ -21,8 +22,8 @@ export  const StyledTitle = styled.h1`
 
 export const StyledCard = styled(Card)`
   border-radius: 0px;
-  height: 40vh;
-  width: 50vw;
+  height: 10vh;
+  width: 15vw;
   box-shadow: 0px 4px 4px rgba(207, 29, 29, 0.15);
 `;
 
@@ -55,14 +56,14 @@ export const StyledSecondaryBtn = styled(Button)`
 `;
 
 export const StyledTable: any = styled(Table)`
-  border: 2px solid;
+  border: 1px solid gray;
   height: fit-content;
   width: fit-content;
   justify-content: center;
   align-items: center;
   display: flex;
   margin-left: 30vh;
-  margin-top: 10vh;
+  margin-top: 3vh;
   
 `;
 
@@ -92,4 +93,10 @@ export const StyledSpanTag = styled.span`
   &:hover {
     background-color: magenta;
   }
+`;
+export const StyledSearchBar=styled(Input.Search)`
+  border: 0px;
+  
+  /* size:40px; */
+
 `;
