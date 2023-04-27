@@ -1,17 +1,13 @@
 import { Card, Row, Col, Input, Checkbox, Button } from "antd";
-
-import React from "react";
-import logo from "./assets/login-logo.png";
 import "./SignIn.css";
-import background from "./assets/background.png";
-import { List } from "antd/es/form/Form";
+import logo from '../assets/login-logo.png'
+
 function ProSignIn() {
   let username = "";
   let password = "";
 
   return (
     <div className="signin-div">
-      
       <Card className="signin-card">
         <Row gutter={[16, 16]}>
           <Col xs={{ span: 24 }}>

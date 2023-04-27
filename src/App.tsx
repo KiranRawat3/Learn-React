@@ -1,105 +1,43 @@
-import React, { useState } from "react";
-import styled from "styled-components";
+import React from "react";
+import {
+  AppContainer,
+  AppLink,
+  AppLogo,
+  AppLogoContainer,
+  AppLabel,
+  AppTitle,
+} from "./components/login/LogIn.Style";
+import backgroundimg from "./assets/background.png";
+import logoimage from "./assets/login-logo.png";
+import Card from "./components/login/Card";
+import Input from "./components/login/Input";
+import Button from "./components/login/Button";
+import Checkbox from "./components/login/Checkbox";
 
-import Table from "./components/Common/Table";
-import { Pagination } from "antd";
-import ProLoader from "./components/Common/Loader";
-import Constants from "./components/Common/Constants";
-import Modal from "./components/Common/Modal";
-import Button from "./components/Common/Button";
-import Input from "./components/Common/Input";
-import Tooltip from "./components/Common/Tooltip";
-import { StyledCard, StyledSpanTag } from "./components/Common/Styles";
-import { LoadingOutlined } from "@ant-design/icons";
-import pagination from "antd/es/pagination";
-import Loader from "./components/Common/Loader";
-import PrimaryButton from "./components/Common/PrimaryButton";
-import SecondaryButton from "./components/Common/SecondaryButton";
+// import Logo from "./components/login/LogIn.Style"
 
 function App() {
-  const [visible, setVisible] = useState(false);
-  const  handleOk = () => {
-    setVisible(false);
-  };
-  const handleCancel = () => {
-    setVisible(false);
-  };
-  const showModal = () => {
-    setVisible(true);
-  };
-  const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />
-  const data = [
-    {
-      name: "Button",
-      component: <Button>Submit</Button>,
-      key: "1",
-    },
-    {
-      name: "Input",
-      component: <Input placeholder={""} bordered={false}></Input>,
-      key: "2",
-    },
-    {
-      name: "Primary Button",
-      component: <PrimaryButton>Sign Up</PrimaryButton>,
-      key: "3",
-    },
-    {
-      name: "Secondary button",
-      component: <SecondaryButton>Cancel</SecondaryButton>,
-      key: "4",
-    },
-    {
-      name: "Card",
-      component: (
-        <StyledCard bordered={false} hoverable={true}>
-          {" "}
-          This is Card Component{" "}
-        </StyledCard>
-      ),
-      key: "5",
-    },
-    {
-      name: "Loader",
-      component: <Loader icon={antIcon} spinning={false}></Loader>,
-      key: "6",
-    },
-    {
-      name: "Modal",
-      component:<><Button onClick={showModal}>{"open modal"}</Button><Modal onOk={handleOk} onCancel={handleCancel} visible={visible}><div>THIS IS A MODAL</div></Modal></>,
-      key: "7",
-    },{
-        name:"Tooltip",
-        component:<Tooltip title="prompt text"  trigger ="hover"  arrow = {true}>
-        <StyledSpanTag>Tooltip will show on mouse enter.</StyledSpanTag>
-        </Tooltip>,
-        key:"8",
-    }
-  ];
-
-  const columns = [
-    {
-      title: "Name",
-      dataIndex: "name",
-      key: "key",
-    },
-    {
-      title: "Component",
-      dataIndex: "component",
-      key: "key",
-    },
-  ];
   return (
-    <>
-     <Table
-      dataSource={data}
-      columns={columns}
-      pagination={pagination}>
-        this is table
-      </Table>
-    
-   
-    </>
+    <AppContainer backgroundimg={backgroundimg}>
+      <Card>
+        <AppLogoContainer>
+          <AppLogo src={logoimage} />
+          <AppTitle>Login</AppTitle>
+          <AppLabel>Welcome To Smart Asset Monitoring System</AppLabel>
+        </AppLogoContainer>
+        <Input placeholder={"UserId"}></Input>
+        <Input placeholder={"Password"}></Input>
+        <Checkbox />
+        <AppLabel>Remember me</AppLabel>
+        <Button>LogIn</Button>
+        <AppLink>Forgot UserId?</AppLink>
+        <br /> <br />
+        <AppLink>Forgot Password?</AppLink>
+        <br /><br />
+        <AppLabel>Not Registered?</AppLabel>
+        <AppLink>Register</AppLink>
+      </Card>
+    </AppContainer>
   );
 }
 

@@ -1,10 +1,10 @@
 import { Tooltip ,Modal,Button,Table,Input,Card,Spin} from "antd";
 import styled from "styled-components";
-import PrimaryButton from "./PrimaryButton";
-import Loader from "./Loader";
-import SecondaryButton from "./SecondaryButton";
-import { LoadingOutlined } from "@ant-design/icons";
-
+// import PrimaryButton from "./PrimaryButton";
+// import Loader from "./Loader";
+// import SecondaryButton from "./SecondaryButton";
+// import { LoadingOutlined } from "@ant-design/icons";
+import "./SignIn.css";
 export const StyledButton = styled(Button)`
   border-radius: 2px;
   background: ${(props) => (props.type === "primary" ? "#4caf50" : "#FFF")};

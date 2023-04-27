@@ -1,6 +1,6 @@
-.signin-div {
+.signin-div {   
  
-  background: url(background.png);
+  background: url(../assets/background.png);
   background-size: cover;
   background-attachment: fixed;
   justify-content: center;
